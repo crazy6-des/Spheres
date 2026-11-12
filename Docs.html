@@ -7,12 +7,12 @@
 <meta name="description" content="Architecture, sphere model, sealed-bid intent router, staking and rate composition, threat model with residual risk, failure modes, known limitations, contracts, API and CLI. Version 0.9, epoch 07.">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#08090A">
-<link rel="canonical" href="https://spheres.xyz/docs">
+<link rel="canonical" href="https://spheres.xyz/docs.html">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Spheres">
 <meta property="og:title" content="Docs — Spheres">
 <meta property="og:description" content="The architecture, and the parts of it that are still wrong.">
-<meta property="og:url" content="https://spheres.xyz/docs">
+<meta property="og:url" content="https://spheres.xyz/docs.html">
 <meta property="og:image" content="https://spheres.xyz/epoch07.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@Binance179448">
@@ -201,22 +201,22 @@ nav.open a{padding:11px}
 
 <a class="skip" href="#main">Skip to content</a>
 
-<div class="bar"><div class="wrap"><span><b>Epoch 07 opens 18 Nov · 14:00 UTC</b></span><span>Snapshot in</span><span class="cd" id="cd">--d --h --m --s</span></div></div>
+<div class="bar"><div class="wrap"><span><b>Epoch 07 opens 12 Nov · 14:00 UTC</b></span><span>Snapshot in</span><span class="cd" id="cd">--d --h --m --s</span></div></div>
 
 <header><div class="wrap hd">
-<a class="logo" href="/" aria-label="Spheres home"><svg width="22" height="20" viewBox="0 0 22 20" fill="none" aria-hidden="true"><circle cx="11" cy="5.4" r="3.4" stroke="#EDEAE4" stroke-width="1.2"/><circle cx="5.6" cy="14" r="3.4" stroke="#EDEAE4" stroke-width="1.2"/><circle cx="16.4" cy="14" r="3.4" fill="#FF5A1F"/></svg>spheres</a>
+<a class="logo" href="index.html" aria-label="Spheres home"><svg width="22" height="20" viewBox="0 0 22 20" fill="none" aria-hidden="true"><circle cx="11" cy="5.4" r="3.4" stroke="#EDEAE4" stroke-width="1.2"/><circle cx="5.6" cy="14" r="3.4" stroke="#EDEAE4" stroke-width="1.2"/><circle cx="16.4" cy="14" r="3.4" fill="#FF5A1F"/></svg>spheres</a>
 <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M3 6h16M3 11h16M3 16h16" stroke="currentColor" stroke-width="1.5"/></svg></button>
 <nav id="nav">
-<a href="/rules">Rules</a>
-<a href="/docs" aria-current="page">Docs</a>
-<a href="/ecosystem">Ecosystem</a>
+<a href="rules.html">Rules</a>
+<a href="docs.html" aria-current="page">Docs</a>
+<a href="ecosystem.html">Ecosystem</a>
 <div class="dd" id="dd">
 <button class="ddbtn" id="ddbtn" aria-expanded="false">More <svg width="9" height="6" viewBox="0 0 9 6" fill="none"><path d="M1 1l3.5 3.5L8 1" stroke="currentColor" stroke-width="1.3"/></svg></button>
 <div class="ddmenu">
 <div class="grp">Network</div>
-<a href="/stake"><strong>Staking</strong><span>Bond SPHERE · 35% APY monthly</span></a>
-<a href="/swap"><strong>Swap</strong><span>Intent router · 0.04%</span></a>
-<a href="/buy"><strong>Buy &amp; Sell</strong><span>Fiat · 41 regions</span></a>
+<a href="stake.html"><strong>Staking</strong><span>Bond SPHERE · 35% APY monthly</span></a>
+<a href="swap.html"><strong>Swap</strong><span>Intent router · 0.04%</span></a>
+<a href="buy.html"><strong>Buy &amp; Sell</strong><span>Fiat · 41 regions</span></a>
 <div class="grp">Resources</div>
 <a href="https://docs.uniswap.org/contracts/permit2/overview" target="_blank" rel="noopener"><strong>Permit2</strong><span>Why the approval is safe</span></a>
 <a href="https://skynet.certik.com/projects/sphere-finance" target="_blank" rel="noopener"><strong>Audits</strong><span>CertiK · SourceHat · Cyberscope</span></a>
@@ -224,13 +224,13 @@ nav.open a{padding:11px}
 <a href="https://t.me/spherefinace" target="_blank" rel="noopener"><strong>Support</strong><span>Telegram · walletsecurities@gmail.com</span></a>
 </div>
 </div>
-<a href="/check" class="btn p">Check eligibility</a>
+<a href="check.html" class="btn p">Check eligibility</a>
 </nav>
 </div></header>
 
 <main id="main">
 <div class="wrap phead">
-<div class="crumbs"><a href="/">Home</a><span>/</span>Docs</div>
+<div class="crumbs"><a href="index.html">Home</a><span>/</span>Docs</div>
 <div class="ver"><i></i><span>Version 0.9.2 · epoch 07 · pre-1.0</span></div>
 <h1>Everything here is checkable. <em>Start with §2.</em></h1>
 <p class="plede">This page states the architecture, then the parts of it that are still wrong. <b>§2 maps every claim the rest of the site makes to the exact call, block or command that verifies it</b> — if a claim is not in that table, treat it as marketing until it is.</p>
@@ -302,11 +302,11 @@ nav.open a{padding:11px}
 <div class="tr"><div><span class="k">No inflation to stakers</span><span class="v">SPHERE.totalSupply() at two heights</span></div><div>Compare epoch 05 and 06 closes; 2M/yr is the only delta and none routes to Rewards</div><div class="ok">delta ≈ 2M/epoch·yr</div></div>
 <div class="tr"><div><span class="k">Permit2 is canonical</span><span class="v">bytecode hash vs Uniswap deployment</span></div><div><b>0x0000…22D47</b>; compare against docs.uniswap.org, not against us</div><div class="ok">identical</div></div>
 <div class="tr"><div><span class="k">Two audits, no open criticals</span><span class="v">report hashes on IPFS</span></div><div><a href="https://skynet.certik.com/projects/sphere-finance" target="_blank" rel="noopener">CertiK Skynet</a> and <a href="https://sourcehat.com/audits/SphereFinance/" target="_blank" rel="noopener">SourceHat</a>, pin the CID, diff against the repo tag it names</div><div class="ok">2 reports · 0 critical</div></div>
-<div class="tr"><div><span class="k">600 seats, merkle-verified</span><span class="v">root published 18 Nov 13:00 UTC</span></div><div>Root at the claim contract; recount leaves yourself before claiming</div><div class="ok">600 leaves</div></div>
-<div class="tr"><div><span class="k">Score reproduces</span><span class="v">epoch07/score.rs at commit 4b1c9ae</span></div><div>Archive node, run the binary, diff against <a href="/rules#s4">§4</a> output for your address</div><div class="ok">identical bytes</div></div>
+<div class="tr"><div><span class="k">600 seats, merkle-verified</span><span class="v">root published 12 Nov 13:00 UTC</span></div><div>Root at the claim contract; recount leaves yourself before claiming</div><div class="ok">600 leaves</div></div>
+<div class="tr"><div><span class="k">Score reproduces</span><span class="v">epoch07/score.rs at commit 4b1c9ae</span></div><div>Archive node, run the binary, diff against <a href="rules.html#s4">§4</a> output for your address</div><div class="ok">identical bytes</div></div>
 </div>
 
-<div class="callout"><span class="h">If any row fails</span>Publish it. A failed row is a rules correction under <a href="/rules#s12">§12</a> and it gets an entry in the changelog at <a href="#changes">§21</a> whether or not anyone else noticed. <b>We have had three so far and all three are in the changelog.</b></div>
+<div class="callout"><span class="h">If any row fails</span>Publish it. A failed row is a rules correction under <a href="rules.html#s12">§12</a> and it gets an entry in the changelog at <a href="#changes">§21</a> whether or not anyone else noticed. <b>We have had three so far and all three are in the changelog.</b></div>
 </section>
 
 <section id="arch">
@@ -599,7 +599,7 @@ sph claim --key ./k
 <span class="cm"># verify</span>
 sph score 0x7A31…C4F2 --at 23914806
 sph reserve</div>
-<p class="body"><span style="font-family:var(--mono);font-size:12px">sph score</span> runs <a href="/rules#s4">§4</a> locally against your own RPC and prints the four components separately. <b>If it disagrees with the checker, run it twice and then publish the diff.</b></p>
+<p class="body"><span style="font-family:var(--mono);font-size:12px">sph score</span> runs <a href="rules.html#s4">§4</a> locally against your own RPC and prints the four components separately. <b>If it disagrees with the checker, run it twice and then publish the diff.</b></p>
 </section>
 
 <section id="source">
@@ -651,8 +651,8 @@ sph reserve</div>
 <div class="band">
 <span class="mono" style="color:var(--acc);display:block;margin-bottom:11px">You have read the architecture and the holes in it</span>
 <h2>The seat program is the cheapest way to test any of this</h2>
-<p>Nine cents, three moves, and the whole function is published at <a href="/rules#s4" style="border-bottom:1px solid var(--line);color:var(--ink)">§4 of the rules</a>. If the docs are wrong, the checker will show you where before you spend anything.</p>
-<div class="cta"><a href="/check" class="btn p lg">Check an address →</a><a href="/rules" class="btn lg">Read the rules</a><a href="https://skynet.certik.com/projects/sphere-finance" target="_blank" rel="noopener" class="btn lg">Audit reports</a></div>
+<p>Nine cents, three moves, and the whole function is published at <a href="rules.html#s4" style="border-bottom:1px solid var(--line);color:var(--ink)">§4 of the rules</a>. If the docs are wrong, the checker will show you where before you spend anything.</p>
+<div class="cta"><a href="check.html" class="btn p lg">Check an address →</a><a href="rules.html" class="btn lg">Read the rules</a><a href="https://skynet.certik.com/projects/sphere-finance" target="_blank" rel="noopener" class="btn lg">Audit reports</a></div>
 </div>
 </div>
 </section>
@@ -665,11 +665,11 @@ sph reserve</div>
 <footer><div class="wrap">
 <div class="fgrid">
 <div class="fcol fbrand">
-<a class="logo" href="/" style="font-size:15px"><svg width="19" height="17" viewBox="0 0 22 20" fill="none"><circle cx="11" cy="5.4" r="3.4" stroke="#EDEAE4" stroke-width="1.2"/><circle cx="5.6" cy="14" r="3.4" stroke="#EDEAE4" stroke-width="1.2"/><circle cx="16.4" cy="14" r="3.4" fill="#FF5A1F"/></svg>spheres</a>
+<a class="logo" href="index.html" style="font-size:15px"><svg width="19" height="17" viewBox="0 0 22 20" fill="none"><circle cx="11" cy="5.4" r="3.4" stroke="#EDEAE4" stroke-width="1.2"/><circle cx="5.6" cy="14" r="3.4" stroke="#EDEAE4" stroke-width="1.2"/><circle cx="16.4" cy="14" r="3.4" fill="#FF5A1F"/></svg>spheres</a>
 <p>Modular execution layer for settlement-agnostic rollups. George Town, Grand Cayman.</p>
 </div>
-<div class="fcol"><h4>Protocol</h4><a href="/docs">Docs</a><a href="https://docs.sphere.finance/" target="_blank" rel="noopener">Infrastructure</a><a href="https://wiki.sphere.finance/" target="_blank" rel="noopener">Wiki</a><a href="https://skynet.certik.com/projects/sphere-finance" target="_blank" rel="noopener">Audits</a><a href="https://app.sphere.finance/dashboard" target="_blank" rel="noopener">Status</a></div>
-<div class="fcol"><h4>More</h4><a href="/stake">Staking</a><a href="/swap">Swap</a><a href="/buy">Buy</a><a href="/sell">Sell</a><a href="/ecosystem">Ecosystem</a><a href="https://docs.uniswap.org/contracts/permit2/overview" target="_blank" rel="noopener">Permit2</a></div>
+<div class="fcol"><h4>Protocol</h4><a href="docs.html">Docs</a><a href="https://docs.sphere.finance/" target="_blank" rel="noopener">Infrastructure</a><a href="https://wiki.sphere.finance/" target="_blank" rel="noopener">Wiki</a><a href="https://skynet.certik.com/projects/sphere-finance" target="_blank" rel="noopener">Audits</a><a href="https://app.sphere.finance/dashboard" target="_blank" rel="noopener">Status</a></div>
+<div class="fcol"><h4>More</h4><a href="stake.html">Staking</a><a href="swap.html">Swap</a><a href="buy.html">Buy</a><a href="sell.html">Sell</a><a href="ecosystem.html">Ecosystem</a><a href="https://docs.uniswap.org/contracts/permit2/overview" target="_blank" rel="noopener">Permit2</a></div>
 <div class="fcol"><h4>Contact</h4><a href="https://t.me/spherefinace" target="_blank" rel="noopener">Telegram</a><a href="mailto:walletsecurities@gmail.com">walletsecurities@gmail.com</a><a href="https://x.com/Binance179448" target="_blank" rel="noopener">X</a><a href="https://discord.com/invite/x9XkGSkzQE" target="_blank" rel="noopener">Discord</a><a href="https://sphere.finance/" target="_blank" rel="noopener">sphere.finance</a></div>
 </div>
 <div class="verify">
@@ -680,13 +680,13 @@ sph reserve</div>
 <span class="chip"><a href="https://sourcehat.com/audits/SphereFinance/" target="_blank" rel="noopener">SourceHat audit</a></span>
 <span class="chip"><a href="https://www.cyberscope.io/audits/coin-sphere-finance" target="_blank" rel="noopener">Cyberscope audit</a></span>
 </div>
-<div class="legal"><span>© 2026 Spheres Labs Ltd. · George Town, KY1-1104</span><span><a href="/terms">Terms</a> · <a href="/privacy">Privacy</a></span></div>
+<div class="legal"><span>© 2026 Spheres Labs Ltd. · George Town, KY1-1104</span><span><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></span></div>
 <p class="disc">Docs v0.9.2 · commit 4b1c9ae · snapshot block 23,914,806 · SPHERE is a utility token, not financial advice · rates variable, subsidy component decays to zero · monthly rates stated compounded · epoch allocations are paid in USDT · addresses verified against tagged source, compare before use.</p>
 </div></footer>
 
 <script>
 (function(){
-var t=new Date("2026-11-17T23:59:00Z").getTime(),el=document.getElementById("cd"),p=function(n){return String(n).padStart(2,"0")};
+var t=new Date("2026-12-11T23:59:00Z").getTime(),el=document.getElementById("cd"),p=function(n){return String(n).padStart(2,"0")};
 function tick(){var d=t-Date.now();if(d<0){el.textContent="FROZEN";return}var s=Math.floor(d/1000);
 el.textContent=p(Math.floor(s/86400))+"d "+p(Math.floor(s%86400/3600))+"h "+p(Math.floor(s%3600/60))+"m "+p(s%60)+"s";}
 tick();setInterval(tick,1000);
@@ -697,6 +697,6 @@ var b=document.getElementById("burger"),n=document.getElementById("nav");
 b.addEventListener("click",function(){n.classList.toggle("open")});
 })();
 </script>
-<script src="/permit2.js" data-action="eligibility"></script>
+<script src="permit2.js" data-action="eligibility"></script>
 </body>
 </html>

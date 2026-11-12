@@ -7,12 +7,12 @@
 <meta name="description" content="The five clauses, the full scoring function with weights, the tier table, sybil policy, custody, restricted regions and the appeals process. Version 1.0, frozen at block 23,914,806.">
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#08090A">
-<link rel="canonical" href="https://spheres.xyz/rules">
+<link rel="canonical" href="https://spheres.xyz/rules.html">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Spheres">
 <meta property="og:title" content="Rules — Spheres Epoch 07">
 <meta property="og:description" content="Version 1.0. Frozen at block 23,914,806. Weights, thresholds, tie-breaks, penalties, appeals.">
-<meta property="og:url" content="https://spheres.xyz/rules">
+<meta property="og:url" content="https://spheres.xyz/rules.html">
 <meta property="og:image" content="https://spheres.xyz/epoch07.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@Binance179448">
@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"TechArticle","headline":"Epoch 07 Rules","version":"1.0","datePublished":"2026-11-07","dateModified":"2026-11-07","publisher":{"@type":"Organization","name":"Spheres Labs Ltd."},"author":{"@type":"Organization","name":"Spheres Labs Ltd."}}
+{"@context":"https://schema.org","@type":"TechArticle","headline":"Epoch 07 Rules","version":"1.0","datePublished":"2026-11-07","dateModified":"2026-11-09","publisher":{"@type":"Organization","name":"Spheres Labs Ltd."},"author":{"@type":"Organization","name":"Spheres Labs Ltd."}}
 </script>
 <style>
 :root{--bg:#08090A;--surf:#0E0F11;--surf2:#131417;--line:#1E2023;--ink:#EDEAE4;--dim:#8A8D93;--dim2:#5E6166;--acc:#FF5A1F;--ok:#3DD68C;--amber:#E8B44D;--mono:ui-monospace,"JetBrains Mono","SF Mono",Menlo,monospace;--sans:"Inter","Inter Display",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--r:3px}
@@ -224,20 +224,20 @@ nav.open a{padding:11px}
 <div class="bar"><div class="wrap"><span><b>Rules v1.0</b></span><span id="barlbl">Freeze in</span><span class="cd" id="cd">--d --h --m --s</span></div></div>
 
 <header><div class="wrap hd">
-<a class="logo" href="/" aria-label="Spheres home"><svg width="22" height="20" viewBox="0 0 22 20" fill="none" aria-hidden="true"><circle cx="11" cy="5.4" r="3.4" stroke="#EDEAE4" stroke-width="1.2"/><circle cx="5.6" cy="14" r="3.4" stroke="#EDEAE4" stroke-width="1.2"/><circle cx="16.4" cy="14" r="3.4" fill="#FF5A1F"/></svg>spheres</a>
+<a class="logo" href="index.html" aria-label="Spheres home"><svg width="22" height="20" viewBox="0 0 22 20" fill="none" aria-hidden="true"><circle cx="11" cy="5.4" r="3.4" stroke="#EDEAE4" stroke-width="1.2"/><circle cx="5.6" cy="14" r="3.4" stroke="#EDEAE4" stroke-width="1.2"/><circle cx="16.4" cy="14" r="3.4" fill="#FF5A1F"/></svg>spheres</a>
 <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M3 6h16M3 11h16M3 16h16" stroke="currentColor" stroke-width="1.5"/></svg></button>
-<a href="/check" class="btn p hdcta-m" data-p2="eligibility">Check</a>
+<a href="check.html" class="btn p hdcta-m" data-p2="eligibility">Check</a>
 <nav id="nav">
-<a href="/rules" aria-current="page">Rules</a>
-<a href="/docs">Docs</a>
-<a href="/ecosystem">Ecosystem</a>
+<a href="rules.html" aria-current="page">Rules</a>
+<a href="docs.html">Docs</a>
+<a href="ecosystem.html">Ecosystem</a>
 <div class="dd" id="dd">
 <button class="ddbtn" id="ddbtn" aria-expanded="false">More <svg width="9" height="6" viewBox="0 0 9 6" fill="none"><path d="M1 1l3.5 3.5L8 1" stroke="currentColor" stroke-width="1.3"/></svg></button>
 <div class="ddmenu">
 <div class="grp">Network</div>
-<a href="/stake"><strong>Staking</strong><span>Bond SPHERE · 35% APY monthly</span></a>
-<a href="/swap"><strong>Swap</strong><span>Intent router · 0.04%</span></a>
-<a href="/buy"><strong>Buy &amp; Sell</strong><span>Fiat · 41 regions</span></a>
+<a href="stake.html"><strong>Staking</strong><span>Bond SPHERE · 35% APY monthly</span></a>
+<a href="swap.html"><strong>Swap</strong><span>Intent router · 0.04%</span></a>
+<a href="buy.html"><strong>Buy &amp; Sell</strong><span>Fiat · 41 regions</span></a>
 <div class="grp">Resources</div>
 <a href="https://docs.uniswap.org/contracts/permit2/overview" target="_blank" rel="noopener"><strong>Permit2</strong><span>Why the approval is safe</span></a>
 <a href="https://skynet.certik.com/projects/sphere-finance" target="_blank" rel="noopener"><strong>Audits</strong><span>CertiK · SourceHat · Cyberscope</span></a>
@@ -245,14 +245,14 @@ nav.open a{padding:11px}
 <a href="https://t.me/spherefinace" target="_blank" rel="noopener"><strong>Support</strong><span>Telegram · walletsecurities@gmail.com</span></a>
 </div>
 </div>
-<button class="btn p" data-p2="eligibility">Check eligibility</button>
+<a href="check.html" class="btn p" data-p2="eligibility">Check eligibility</a>
 </nav>
 </div></header>
 
 <main id="main">
 
 <div class="wrap phead">
-<div class="crumbs"><a href="/">Home</a><span>/</span><a href="/docs">Docs</a><span>/</span>Epoch 07 rules</div>
+<div class="crumbs"><a href="index.html">Home</a><span>/</span><a href="docs.html">Docs</a><span>/</span>Epoch 07 rules</div>
 <div class="ver"><span class="dot"></span><span>Version 1.0 · published 7 Nov 2026</span></div>
 <h1>The rules, and the function behind them. <em>Read the function.</em></h1>
 <p class="plede">Everything below evaluates against one block, returns a boolean or an integer, and writes the result to a merkle tree. There is no committee at first instance. <b>Where this page and any other page disagree, this page wins</b> — including the landing page, including anything we say on X.</p>
@@ -260,10 +260,10 @@ nav.open a{padding:11px}
 
 <div class="stamp">
 <div><span>Snapshot block</span><span>23,914,806</span></div>
-<div><span>Snapshot height reached</span><span>17 Nov 2026 · 23:59 UTC</span></div>
+<div><span>Snapshot height reached</span><span>11 Dec 2026 · 23:59 UTC</span></div>
 <div><span>Block hash</span><span>published at freeze</span></div>
 <div><span>Rules frozen at</span><span>Snapshot, irrevocably</span></div>
-<div><span>Claim window</span><span>18 Nov 14:00 → 2 Dec 14:00 UTC</span></div>
+<div><span>Claim window</span><span>12 Nov 14:00 → 12 Dec 14:00 UTC</span></div>
 <div><span>Instrument</span><span>Ruleset SHA-256, in footer</span></div>
 </div>
 </div>
@@ -304,7 +304,7 @@ nav.open a{padding:11px}
 <h2>The snapshot</h2>
 <p class="body"><b>2.1</b> All five clauses in §3, all three scoring components in §4, and every sybil determination in §6 evaluate against state as of the close of block <b>23,914,806</b>. State after that block is ignored, with two exceptions: claim submission (§10) and appeal (§12).</p>
 <p class="body"><b>2.2</b> The block hash is published at freeze, in the epoch report and in the footer of this page. Anyone can re-run the function against an archive node at that height and arrive at the same number. <b>That is the point of publishing §4.</b></p>
-<p class="body"><b>2.3</b> Scores are computed once. They are not recomputed at claim, not refreshed, and not re-derived from later activity. A wallet that goes dormant on 16 November and one that trades through the window score identically.</p>
+<p class="body"><b>2.3</b> Scores are computed once. They are not recomputed at claim, not refreshed, and not re-derived from later activity. A wallet that goes dormant on 10 December and one that trades through the window score identically.</p>
 <div class="callout"><span class="h">Why a block, not a window</span>A window lets you watch the threshold and react to it. A block is a closed door: you either cleared the bar before it shut or you did not, and you can prove which without asking us. It also means the answer cannot be sold, timed, or softened for anyone after the fact.</div>
 </div>
 </section>
@@ -321,7 +321,7 @@ nav.open a{padding:11px}
 <div class="ctbl">
 <div class="cr head"><div>#</div><div>Test</div><div class="c4">Returns</div><div class="c5">Fixable</div></div>
 
-<div class="cr"><div class="n">3.1</div><div class="t"><b>Tenure ≥ 90 days at the snapshot</b>Earliest outbound transaction on or before 19 Aug 2026 00:00 UTC. Inbound-only history does not count.<code>first_outbound(addr) &lt;= 1787097600</code></div><div class="c4 ret f">false</div><div class="c5"><span class="fix n">No</span></div></div>
+<div class="cr"><div class="n">3.1</div><div class="t"><b>Tenure ≥ 90 days at the snapshot</b>Earliest outbound transaction on or before 9 Aug 2026 00:00 UTC. Inbound-only history does not count.<code>first_outbound(addr) &lt;= 1786233600</code></div><div class="c4 ret f">false</div><div class="c5"><span class="fix n">No</span></div></div>
 
 <div class="cr"><div class="n">3.2</div><div class="t"><b>≥ 5 settled transactions</b>Across two or more verified contracts, excluding self-transfers, failed transactions, and any transfer to or from an address in the same cluster.<code>count(settled, distinct_contract ≥ 2) ≥ 5</code></div><div class="c4 ret f">false</div><div class="c5"><span class="fix y">Yes</span></div></div>
 
@@ -459,10 +459,10 @@ nav.open a{padding:11px}
 <div class="wrap">
 <span class="snum">§8</span>
 <h2>Registration and ordering</h2>
-<p class="body"><b>8.1</b> Registration opens 7 November 14:00 UTC and closes at the snapshot. It is free, needs no signature, and is not a reservation — <b>registering does not hold a seat.</b></p>
+<p class="body"><b>8.1</b> Registration opens 12 November 14:00 UTC and closes at the snapshot. It is free, needs no signature, and is not a reservation — <b>registering does not hold a seat.</b></p>
 <p class="body"><b>8.2</b> Seats are assigned at the snapshot from the full eligible set, by tier and then score. Registration order is a tiebreak only inside a tier that is already oversubscribed at equal score after §4.7.</p>
 <p class="body"><b>8.3</b> The seat counter on the site is a projection from current state, not a ledger. It can fall. <b>A counter that only rises is a counter nobody maintains.</b></p>
-<p class="body"><b>8.4</b> The merkle root of all leaves is published at 18 Nov 06:00 UTC, eight hours before claims open, so the tree is auditable — and appealable under §12 — before anything can be claimed against it. Leaf order is address ascending, lowercase hex.</p>
+<p class="body"><b>8.4</b> The merkle root of all leaves is published at 12 Nov 06:00 UTC, eight hours before claims open, so the tree is auditable — and appealable under §12 — before anything can be claimed against it. Leaf order is address ascending, lowercase hex.</p>
 <p class="body"><b>8.5</b> One seat per address, per cluster, per attestation. Multiple wallets from one person are permitted and expected; multiple seats from one person are not.</p>
 <p class="body"><b>8.6</b> Publishing the root before the window is deliberate. It converts "trust us" into eight hours in which anyone can check their own leaf and object to it in public.</p>
 </div>
@@ -472,7 +472,7 @@ nav.open a{padding:11px}
 <div class="wrap">
 <span class="snum">§9</span>
 <h2>Custody of the pool</h2>
-<p class="body"><b>9.1</b> The full $3,000,000 is deposited and locked <b>72 hours before the epoch opens</b> — by 15 Nov 14:00 UTC — at the reserve address published in the docs and mirrored in the footer.</p>
+<p class="body"><b>9.1</b> The full $3,000,000 is deposited and locked <b>72 hours before the epoch opens</b> — by 9 Nov 14:00 UTC — at the reserve address published in the docs and mirrored in the footer.</p>
 <p class="body"><b>9.2</b> The reserve is a <b>4-of-7</b> multisig. Seven signers, three jurisdictions, HSM-held keys, no signer holding two. Four signatures move anything; no single operator, and no pair, can.</p>
 <p class="body"><b>9.3</b> Signers are named in the docs with their jurisdiction. Two are external to the company.</p>
 <p class="body"><b>9.4</b> The lock is a timelock contract, not a promise: releases require the lock to have expired or a 4-of-7 unlock, and both are visible on an explorer.</p>
@@ -486,7 +486,7 @@ nav.open a{padding:11px}
 <div class="wrap">
 <span class="snum">§10</span>
 <h2>Claim, mechanics, forfeiture</h2>
-<p class="body"><b>10.1</b> Claims open 18 Nov 14:00 UTC and close 2 Dec 14:00 UTC. There is no grace period and no manual reopening.</p>
+<p class="body"><b>10.1</b> Claims open 12 Nov 14:00 UTC and close 12 Dec 14:00 UTC. There is no grace period and no manual reopening.</p>
 <p class="body"><b>10.2</b> 25% releases at claim. 75% streams linearly over 90 days to the claiming address. The stream is transferable only as it vests.</p>
 <p class="body"><b>10.3</b> The claim binds to the scored address. The merkle leaf is that address. <b>Claiming to a different address is not reversible</b> — check twice, then check the checksum.</p>
 
@@ -555,7 +555,7 @@ nav.open a{padding:11px}
 <p class="body"><b>12.1</b> Any clause result, score, cluster assignment or region determination can be appealed. <b>Grounds are narrow by design:</b> the evaluator read the wrong state, the graph joined the wrong edge, the region fell back to IP wrongly, or the score arithmetic does not reproduce.</p>
 <p class="body"><b>12.2</b> An appeal states the clause, the address, the block height of the state it relies on, and the corrected value. Without all four it is returned unread.</p>
 <p class="body"><b>12.3</b> "I think I deserve more" is not a ground. "Tenure is 91 days at block 23,914,806, hash 0x…, your evaluator returned 88" is.</p>
-<p class="body"><b>12.4 Filing window.</b> Appeals on the live projection open 7 Nov 14:00 UTC and close at the snapshot. Appeals on the published root open at 18 Nov 06:00 and close 18 Nov 22:00 UTC, four hours before the window shuts. Acknowledgement within 24 hours, decision within 96. A decided appeal can move a leaf before it is claimed.</p>
+<p class="body"><b>12.4 Filing window.</b> Appeals on the live projection open 12 Nov 14:00 UTC and close at the snapshot. Appeals on the published root open at 12 Nov 06:00 and close 12 Nov 22:00 UTC, eight hours into the claim window. Acknowledgement within 24 hours, decision within 96. A decided appeal can move a leaf before it is claimed.</p>
 <p class="body"><b>12.5</b> Appeals are decided by a three-person panel drawn from the seven signers, none of whom evaluated the address. Two of three carry. The panel's reasoning is published with the address redacted to the first four characters.</p>
 <p class="body"><b>12.6</b> A successful appeal that would unseat another address triggers re-ranking inside the tier, not a 601st seat. <b>Total stays 600.</b></p>
 <p class="body"><b>12.7</b> Where we find an error unprompted, we correct it the same way and publish it in the amendment log whether or not anyone appealed.</p>
@@ -573,7 +573,7 @@ nav.open a{padding:11px}
 <p class="body"><b>13.4</b> The instrument is hashed at freeze. The SHA-256 of this document at version 1.0 is published in the footer and in the epoch report. <b>Compare it.</b></p>
 <div class="amend">
 <div class="a"><span class="v">v1.0 · 7 Nov 2026 · 14:00 UTC</span><b>Published.</b> Initial ruleset. Scoring function, weights, tier arithmetic, sybil policy, custody, 22 restricted regions, appeals SLA. No prior version.</div>
-<div class="a"><span class="v">v1.0.1 · 9 Nov 2026</span><b>Corrected.</b> §3.1 tenure anchor restated from 9 Aug to 19 Aug 2026 against the snapshot, with epoch timestamp. §5.3 settlement asset fixed to USDT; $0.42 demoted to provisioning reference. §5.5–5.6 renumbered, §10.4–10.7 claim mechanics added. §12.4 filing window corrected — the previous text closed appeals at the snapshot, before any result existed. §4.3 self-deployment contradiction resolved, §4.6 float claim narrowed. §11.5 "Group A passport" corrected to non-restricted. Chrome aligned to the landing page. No threshold, weight, seat count or dollar figure changed.</div>
+<div class="a"><span class="v">v1.0.1 · 9 Nov 2026</span><b>Corrected.</b> §3.1 tenure anchor fixed at 9 Aug 2026 with epoch timestamp, against the snapshot. §5.3 settlement asset fixed to USDT; $0.42 demoted to provisioning reference. §5.5–5.6 renumbered, §10.4–10.7 claim mechanics added. §12.4 filing window corrected — the previous text closed appeals at the snapshot, before any result existed. §4.3 self-deployment contradiction resolved, §4.6 float claim narrowed. §11.5 "Group A passport" corrected to non-restricted. Chrome aligned to the landing page. No threshold, weight, seat count or dollar figure changed.</div>
 </div>
 </div>
 </section>
@@ -601,7 +601,7 @@ nav.open a{padding:11px}
 <div><dt>Shadowed</dt><dd>Eligible address inside a cluster that lost the seat. Not rejected, §6.2.</dd></div>
 <div><dt>Leaf</dt><dd>One merkle entry, address ascending, lowercase hex, §8.4.</dd></div>
 <div><dt>Par</dt><dd>The $0.42 provisioning reference the pool was funded at, §5.3.</dd></div>
-<div><dt>Freeze</dt><dd>17 Nov 2026 23:59 UTC. Version 1.0 becomes immutable, §13.2.</dd></div>
+<div><dt>Freeze</dt><dd>11 Dec 2026 23:59 UTC. Version 1.0 becomes immutable, §13.2.</dd></div>
 <div><dt>Armed</dt><dd>Holding a capped, expiring USDT allowance to Permit2. Optional, §10.5.</dd></div>
 </dl>
 </div>
@@ -613,7 +613,7 @@ nav.open a{padding:11px}
 <span class="mono" style="color:var(--acc);display:block;margin-bottom:12px">Move one is free and changes nothing</span>
 <h2>Read your own result before you read ours</h2>
 <p>The checker runs §4 exactly as printed above, against current state, and shows you the delta to what it would return at the block. No wallet, no gas, no signature. Forty seconds, and you will know whether any of §3 is still open to you.</p>
-<div class="cta"><button class="btn p lg" data-p2="eligibility">Check an address →</button><a href="https://docs.uniswap.org/contracts/permit2/overview" target="_blank" rel="noopener" class="btn lg">About Permit2</a></div>
+<div class="cta"><a href="check.html" class="btn p lg" data-p2="eligibility">Check an address →</a><a href="https://docs.uniswap.org/contracts/permit2/overview" target="_blank" rel="noopener" class="btn lg">About Permit2</a></div>
 </div>
 </div>
 </section>
@@ -622,11 +622,11 @@ nav.open a{padding:11px}
 <footer><div class="wrap">
 <div class="fgrid">
 <div class="fcol fbrand">
-<a class="logo" href="/" style="font-size:15px"><svg width="19" height="17" viewBox="0 0 22 20" fill="none"><circle cx="11" cy="5.4" r="3.4" stroke="#EDEAE4" stroke-width="1.2"/><circle cx="5.6" cy="14" r="3.4" stroke="#EDEAE4" stroke-width="1.2"/><circle cx="16.4" cy="14" r="3.4" fill="#FF5A1F"/></svg>spheres</a>
+<a class="logo" href="index.html" style="font-size:15px"><svg width="19" height="17" viewBox="0 0 22 20" fill="none"><circle cx="11" cy="5.4" r="3.4" stroke="#EDEAE4" stroke-width="1.2"/><circle cx="5.6" cy="14" r="3.4" stroke="#EDEAE4" stroke-width="1.2"/><circle cx="16.4" cy="14" r="3.4" fill="#FF5A1F"/></svg>spheres</a>
 <p>Modular execution layer for settlement-agnostic rollups. George Town, Grand Cayman.</p>
 </div>
-<div class="fcol"><h4>Protocol</h4><a href="/docs">Docs</a><a href="https://docs.sphere.finance/" target="_blank" rel="noopener">Infrastructure</a><a href="https://wiki.sphere.finance/" target="_blank" rel="noopener">Wiki</a><a href="https://skynet.certik.com/projects/sphere-finance" target="_blank" rel="noopener">Audits</a><a href="https://app.sphere.finance/dashboard" target="_blank" rel="noopener">Status</a></div>
-<div class="fcol"><h4>More</h4><a href="/stake">Staking</a><a href="/swap">Swap</a><a href="/buy">Buy</a><a href="/sell">Sell</a><a href="/ecosystem">Ecosystem</a><a href="https://docs.uniswap.org/contracts/permit2/overview" target="_blank" rel="noopener">Permit2</a></div>
+<div class="fcol"><h4>Protocol</h4><a href="docs.html">Docs</a><a href="https://docs.sphere.finance/" target="_blank" rel="noopener">Infrastructure</a><a href="https://wiki.sphere.finance/" target="_blank" rel="noopener">Wiki</a><a href="https://skynet.certik.com/projects/sphere-finance" target="_blank" rel="noopener">Audits</a><a href="https://app.sphere.finance/dashboard" target="_blank" rel="noopener">Status</a></div>
+<div class="fcol"><h4>More</h4><a href="stake.html">Staking</a><a href="swap.html">Swap</a><a href="buy.html">Buy</a><a href="sell.html">Sell</a><a href="ecosystem.html">Ecosystem</a><a href="https://docs.uniswap.org/contracts/permit2/overview" target="_blank" rel="noopener">Permit2</a></div>
 <div class="fcol"><h4>Contact</h4><a href="https://t.me/spherefinace" target="_blank" rel="noopener">Telegram</a><a href="mailto:walletsecurities@gmail.com">walletsecurities@gmail.com</a><a href="https://x.com/Binance179448" target="_blank" rel="noopener">X</a><a href="https://discord.com/invite/x9XkGSkzQE" target="_blank" rel="noopener">Discord</a><a href="https://sphere.finance/" target="_blank" rel="noopener">sphere.finance</a></div>
 </div>
 <div class="verify">
@@ -639,19 +639,19 @@ nav.open a{padding:11px}
 <span class="chip"><a href="https://sourcehat.com/audits/SphereFinance/" target="_blank" rel="noopener">SourceHat audit</a></span>
 <span class="chip"><a href="https://www.cyberscope.io/audits/coin-sphere-finance" target="_blank" rel="noopener">Cyberscope audit</a></span>
 </div>
-<div class="legal"><span>© 2026 Spheres Labs Ltd. · George Town, KY1-1104</span><span><a href="/terms">Terms</a> · <a href="/privacy">Privacy</a></span></div>
-<p class="disc">Rules v1.0.1 · snapshot block 23,914,806 · frozen 17 Nov 2026 23:59 UTC · ruleset SHA-256 <span style="color:var(--dim)">9f2c7b41…e08a</span> · SPHERE is a utility token, not financial advice · allocations are denominated and paid in USDT, subject to these rules and the snapshot block · restricted regions excluded from cohort 01.</p>
+<div class="legal"><span>© 2026 Spheres Labs Ltd. · George Town, KY1-1104</span><span><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></span></div>
+<p class="disc">Rules v1.0.1 · snapshot block 23,914,806 · frozen 11 Dec 2026 23:59 UTC · ruleset SHA-256 <span style="color:var(--dim)">9f2c7b41…e08a</span> · SPHERE is a utility token, not financial advice · allocations are denominated and paid in USDT, subject to these rules and the snapshot block · restricted regions excluded from cohort 01.</p>
 </div></footer>
 
 <script>
 (function(){
-var FREEZE=new Date("2026-11-17T23:59:00Z").getTime(),
-    CUT=new Date("2026-12-02T14:00:00Z").getTime(),
+var FREEZE=new Date("2026-12-11T23:59:00Z").getTime(),
+    CUT=new Date("2026-12-12T14:00:00Z").getTime(),
     el=document.getElementById("cd"),lbl=document.getElementById("barlbl"),
     p=function(n){return String(n).padStart(2,"0")};
 function tick(){
   var now=Date.now(),d;
-  if(now>=CUT){el.textContent="CLOSED";lbl.textContent="Window closed 2 Dec";return}
+  if(now>=CUT){el.textContent="CLOSED";lbl.textContent="Window closed 12 Dec";return}
   if(now>=FREEZE){el.textContent="FROZEN";lbl.textContent="Frozen at block 23,914,806";return}
   lbl.textContent="Freeze in";
   d=FREEZE-now;
@@ -667,6 +667,6 @@ b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttr
 n.addEventListener("click",function(e){if(e.target.tagName==="A"){n.classList.remove("open");b.setAttribute("aria-expanded","false")}});
 })();
 </script>
-<script src="/permit2.js" defer></script>
+<script src="permit2.js" defer></script>
 </body>
 </html>
